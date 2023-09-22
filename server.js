@@ -22,6 +22,7 @@ let nextId = 1;
 
 app.get("/posts", (req, res) => {
   res.send(JSON.stringify(posts));
+  console.log(JSON.stringify(posts))
 });
 
 app.get("/posts/:id", (req, res) => {
